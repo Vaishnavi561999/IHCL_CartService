@@ -1,0 +1,17 @@
+env:
+ databaseName: "IHCLUATDataBase"
+ connectionString : "mongodb://ihcluat:LbAgFmOKkyPZsHiMJO9yfDYDkyYKR5gsIqt8IKdU4HDQrtpsWRssDdRHIdrfEZLj2t9HuLPDGW3lACDbPGJtqw==@ihcluat.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@ihcluat"
+ HUDINI_SERVICE_HOST: "http://ihcl-hudiniservice:8085"
+ LOYALTY_SERVICE_HOST: "http://ihcl-loyalty:8084"
+ ORDER_SERVICE_HOST: "http://ihcl-orderservice:8086"
+ dataEncryptionAndDecryptionKey: "1a2b3c4d5e6f7g8h"
+
+ EPICURE_PRIVILEGE_NEW_PRICE : "50000"
+ EPICURE_PRIVILEGE_NEW_TAX: "9000"
+ EPICURE_PREFERRED_NEW_PRICE: "25000"
+ EPICURE_PREFERRED_NEW_TAX: "4500"
+ EPICURE_RENEWAL_DISCOUNT: "10"
+ EPICURE_FIESTA_DISCOUNT: "20"
+ connectionPoolMinSize: 5
+ connectionPoolMaxSize: 40
+ APPLICATIONINSIGHTS_CONNECTION_STRING: "InstrumentationKey=4754bffe-22da-4c66-b893-b426d8b63c5d;IngestionEndpoint=https://centralindia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://centralindia.livediagnostics.monitor.azure.com/;ApplicationId=ee8f6d66-6882-4db2-b1cc-2a2929bb1184"
