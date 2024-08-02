@@ -1,1 +1,16 @@
+env:
+ databaseName: "IHCLSITDataBase"
+ connectionString : "mongodb://ihclsit:tmBXKavuBiNYle6GEdHoEIeVjprZN6dk7Hes4GBOoYu2Lguk7cQwXgkPAQM2HXiJ2uqOHD4LmsYWACDbgxGFyw==@ihclsit.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@ihclsit@"
+ HUDINI_SERVICE_HOST: "http://ihcl-hudiniservice:8085"
+ LOYALTY_SERVICE_HOST: "http://ihcl-loyalty:8084"
+ ORDER_SERVICE_HOST: "http://ihcl-orderservice:8086"
+ dataEncryptionAndDecryptionKey: "1a2b3c4d5e6f7g8h"
 
+ EPICURE_PRIVILEGE_NEW_PRICE : "50000"
+ EPICURE_PRIVILEGE_NEW_TAX: "9000"
+ EPICURE_PREFERRED_NEW_PRICE: "25000"
+ EPICURE_PREFERRED_NEW_TAX: "4500"
+ EPICURE_RENEWAL_DISCOUNT: "10"
+ EPICURE_FIESTA_DISCOUNT: "20"
+ connectionPoolMinSize: 5
+ connectionPoolMaxSize: 40
