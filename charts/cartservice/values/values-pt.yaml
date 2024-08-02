@@ -1,0 +1,35 @@
+env:
+ databaseName: "IHCLPTDataBase"
+ connectionString : "mongodb://ihclptadmin:XZhEFKO2QXZHatP7334yEQGcVefwyRFLh5oR7wPi0fxipVB2QiEHy9mpeo2QeT1fw97VG5uJipjgACDb0poJfQ==@ihclptadmin.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@ihclptadmin"
+ HUDINI_SERVICE_HOST: "http://ihcl-hudiniservice:8085"
+ LOYALTY_SERVICE_HOST: "http://ihcl-loyalty:8084"
+ ORDER_SERVICE_HOST: "http://ihcl-orderservice:8086"
+ EPICURE_PRIVILEGE_NEW_PRICE : "50000"
+ EPICURE_PRIVILEGE_NEW_TAX: "9000"
+ EPICURE_PREFERRED_NEW_PRICE: "25000"
+ EPICURE_PREFERRED_NEW_TAX: "4500"
+ EPICURE_PRIVILEGE_RENEWAL_PRICE: "45000"
+ EPICURE_PRIVILEGE_RENEWAL_TAX: "8100"
+ EPICURE_PREFERRED_RENEWAL_PRICE: "22500"
+ EPICURE_PREFERRED_RENEWAL_TAX: "4050"
+ EPICURE_RENEWAL_DISCOUNT: "10"
+ EPICURE_FIESTA_DISCOUNT: "20"
+ connectionPoolMinSize: 5
+ connectionPoolMaxSize: 40
+ dataEncryptionAndDecryptionKey: "1a2b3c4d5e6f7g8h"
+ APPLICATIONINSIGHTS_CONNECTION_STRING: "InstrumentationKey=66e000d8-fffd-4ab5-ad33-b475a974844f;IngestionEndpoint=https://centralindia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://centralindia.livediagnostics.monitor.azure.com/"
+
+resources:
+ limits:
+  #cpu: 20
+  memory: 512Mi
+ requests:
+   #cpu: 1
+   memory: 256Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 75
+  targetMemoryUtilizationPercentage: 75
