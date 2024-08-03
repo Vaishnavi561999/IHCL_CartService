@@ -1,0 +1,10 @@
+{
+  "instrumentation": {
+    "logging": {
+      "level": "ALL"
+    }
+  },
+  "role": {
+    "hotelName": "Cart-Service"
+  }
+}
